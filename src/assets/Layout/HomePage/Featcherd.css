@@ -1,0 +1,18 @@
+.featcherd {
+    position: relative;
+    background-image: url('../../images/home/featured.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    color: white;
+    z-index: 0;
+  }
+  
+  .featcherd::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* 60% black overlay */
+    z-index: -1;
+  }
