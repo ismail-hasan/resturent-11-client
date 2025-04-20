@@ -3,6 +3,7 @@ import Banner from './Banner';
 import Category from './Category';
 import HomeMenu from './HomeMenu';
 import Featcherd from './Featcherd';
+import Testmonial from './Testmonial';
 
 const Home = () => {
     return (
@@ -11,6 +12,7 @@ const Home = () => {
             <Category></Category>
             <HomeMenu></HomeMenu>
             <Featcherd></Featcherd>
+            <Testmonial></Testmonial>
         </div>
     );
 };
