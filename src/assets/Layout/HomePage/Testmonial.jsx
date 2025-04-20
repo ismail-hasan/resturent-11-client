@@ -4,6 +4,8 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
+import { Rating } from '@smastrom/react-rating';
+import '@smastrom/react-rating/style.css'
 
 const Testmonial = () => {
 
@@ -25,31 +27,19 @@ const Testmonial = () => {
             <SectionTitle subHeading={'---What Our Clients Say---'} heading={'TESTIMONIALS'}></SectionTitle>
 
 
-            {/* <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-                <SwiperSlide>
-                    {
-                        reviews.map(review => <>
-                            <div key={review._id}>
-                                <p>{review.name}</p>
-                                <p>{review.details}</p>
-                            </div>
-
-                        </>)
-                    }
-                </SwiperSlide>
-
-            </Swiper> */}
-
-
             <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-
 
                 {
                     reviews.map(review => <>
                         <div key={review._id}>
                             <SwiperSlide className='text-center '>
+                                <Rating className='w-full mx-auto mb-6'
+                                    style={{ maxWidth: 180 }}
+                                    value={review.rating}
+                                    readOnly
+                                />
                                 <p className='text-4xl'>{review.name}</p>
-                                <p className='text-base px-20'>{review.details}</p>
+                                <p className='text-base px-40'>{review.details}</p>
                             </SwiperSlide>
                         </div>
 
