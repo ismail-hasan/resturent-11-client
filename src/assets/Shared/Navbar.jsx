@@ -1,13 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { AuthContext } from '../AuthProvider/AuthProvider';
 
 const Navbar = () => {
+    const { user } = useContext(AuthContext)
 
     const links = (
         <>
             <li><a href="/">Home</a></li>
             <li><a href="/menu">Menu</a></li>
             <li><a href="/order/salad">Order</a></li>
-            <li><a href="contact">Contact</a></li>
+            <li><a href="/login">LogIn</a></li>
+            <li><a href="/register">Register</a></li>
+            <li><a href="/register">{user.email}</a></li>
         </>
     );
 
