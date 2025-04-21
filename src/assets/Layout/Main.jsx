@@ -5,7 +5,7 @@ import Footer from '../Shared/Footer';
 
 const Main = () => {
     const location = useLocation()
-    const runningLocation = location.pathname === "/login"
+    const runningLocation = location.pathname === "/login" || location.pathname === "/register"
 
     return (
         <div>
