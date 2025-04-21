@@ -34,11 +34,11 @@ const MenuPage = () => {
             </div>
 
             <MenuCategory item={offeredData}></MenuCategory>
-            <MenuCategory item={dessertsData} title={"Desserts"} img={dessert}></MenuCategory>
+            <MenuCategory item={dessertsData} title={"desserts"} img={dessert}></MenuCategory>
 
-            <MenuCategory item={pizzaData} title={"Pizza"} img={pizza}></MenuCategory>
-            <MenuCategory item={saladsData} title={"Salad"} img={salad}></MenuCategory>
-            <MenuCategory item={soupsData} title={"Soups"} img={soup}></MenuCategory>
+            <MenuCategory item={pizzaData} title={"pizza"} img={pizza}></MenuCategory>
+            <MenuCategory item={saladsData} title={"salad"} img={salad}></MenuCategory>
+            <MenuCategory item={soupsData} title={"soups"} img={soup}></MenuCategory>
 
         </div>
     );
